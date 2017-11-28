@@ -1,0 +1,54 @@
+<!doctype html>
+
+
+<html>
+<head>
+	<title>Debriefing</title>
+	<link rel="stylesheet" href="/static/css/task.css" type="text/css" media="screen">
+</head>
+<body>
+	<div id="debriefing">
+		<h1>Debriefing</h1>
+
+		<div id="debriefingtext">
+		<p>Thank you for your participation in our study!  Your anonymous data makes an
+		important contribution to our understanding of human learning and memory. </p>
+
+		<p><b>Experiment:</b> Woody2</p>
+<p><b>Faculty Supervisors:</b> Dr. Gail Mauner<p>
+<p><b>Contact Number:</b> Dr. Mauner (716) 645-0219</p> 
+<p>As technology increases, people learn new words every day. For example, a decade ago tweet was just something birds did. Surprisingly, researchers know very little about how adults acquire new words and integrate them into their “mental dictionary”. We are pretty sure that adults don’t put conscious effort into learning words like tweet. We think that people learn most new words just by exposure to them in their daily life. To test this hypothesis, we adopted a modified procedure by Bordag et al. (2013) in which you read passages with novel pseudowords (e.g., cranble) and participated in several tasks to assess the extent to which these words were integrated into your semantic memory rather than episodic memory. Semantic memory includes your knowledge of words and the relationships between them, and episodic memory includes memory of events.</p>
+
+<p>In the first task, you read sentences word by word. In every group of sentences, there was an adjective followed by the pseudoword. For half of the pseudowords, the adjective was inconsistent with the meaning of the pseudoword. We predict that if the meaning of the word was learned, people would take longer to read the pseudoword with an inconsistent adjective than if a consistent adjective preceded the pseudoword.</p>
+
+<p>In the second task, we asked some questions about the word to assess whether or not you accepted the pseudoword as a word. Then we asked you to complete a lexical decision task. In a lexical decision task you’re asked to decide whether or not something a word.  If you respond yes to the pseudoword, it suggests that you learned and accepted it as an actual word.</p>
+
+<p>In the last task, a semantic priming task, you participated in a second lexical decision task but this time we added masks and a prime. Semantic priming refers to the tendency for people to be quicker at responding to a word if it is preceded by a word that occurs in similar context to it, as opposed to if it was preceded by a word that is unrelated to it. It is thought that semantic priming occurs due to the increased activation of a certain situation after the first word is displayed. When another word that contains overlap in context follows the first word, response times to the second word will be faster. Aspects like meaning and association being partially activated cause semantic priming to occur. If you learn new words, they might just be a part of the episodic memory and not semantic memory. Some researchers believe that it takes a period of consolidation before words integrate into semantic memory (Rodd et al., 2012). We are interested in whether or not words are incorporated into semantic memory through mere exposure. Therefore, we expect that if the word was integrated into your semantic memory, we would observe a priming effect.</p>
+
+<p style="text-align:center"> References </p>
+<p>Rodd, J. M., Berriman, R., Landau, M., Lee, T., Ho, C., Gaskell, M. G., & Davis, M. H. (2012). Learning new meanings for old words: effects of semantic relatedness. <em>Memory & Cognition, 40(7),</em> 1095-1108.</p>
+<p>Bordag, D., Kirschenbaum, A., Opitz, A., & Tschirner, E. (2012). Incidental vocabulary acquisition during reading by adult native speakers of German.<em>ExLing 2012, 21</em>.</p></div>
+
+			<p>Do you agree to the following statement?</p>
+			<div id="affirmationbox">
+				<p>I feel that I have been adequately debriefed about the nature
+					of the study.  The investigator has explained the purposes of the
+					research to me, and I feel that any questions I have asked were
+					satisfactorily answered.</p>
+					<table><tr>
+						<td id="affirmative" onClick="javascript:document.forms['accept'].submit()">Yes, I agree.</td>
+						<td id="negative" onClick="javascript:document.forms['decline'].submit()">No, please withhold my data. I will contact the experimenter with questions.</td>
+					</tr></table> 
+					<form id="accept" action="complete" method="post">
+						<input type="hidden" name="uniqueid" value="{{ uniqueId }}" />
+						<input type="hidden" name="agree" value="true" />
+					</form>
+					<form id="decline" action="complete" method="post">
+						<input type="hidden" name="uniqueid" value="{{ uniqueId }}" />
+						<input type="hidden" name="agree" value="false" />
+					</form>
+			</div>
+	</div>
+</body>
+
+</html>
